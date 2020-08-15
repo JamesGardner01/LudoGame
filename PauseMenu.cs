@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
+    //This script enables and disables the pause menu and controls what happens when the buttons on the menu are clicked.
     public GameObject pausePanel;
     private bool gamePaused;
     public GameObject mainPauseMenu;
