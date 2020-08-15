@@ -1,4 +1,3 @@
-﻿using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -7,6 +6,16 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
+    //This script controls the majority of everything that happens in the game.
+    //Lines 18-404 = declaring and assigning the starting values to variables and starting the game.
+    //Lines 406-536 = controls turns, timings betweens turns and game ending
+    //Lines 539-798 = player only functions and coroutines
+    //Lines 801-931 = green piece only functions
+    //Lines 934-1064 = yellow piece only functions
+    //Lines 1067-1198 = blue piece only functions
+    //Lines 1201-1562 = functions for all players/all except red(player)
+    
+    //VARIABLES
     //Controllers/objects
     public bool gameOver;
     public GameObject endGame;
@@ -1189,9 +1198,9 @@ public class GameController : MonoBehaviour
     }
 
 
-    //////////////////////////////////////////
-    //FUNCTIONS AND COROUTINES FOR ALL PLAYERS
-    //////////////////////////////////////////
+    ///////////////////////////////////////////////////////
+    //FUNCTIONS AND COROUTINES FOR ALL PLAYERS/ALL BUT RED
+    ///////////////////////////////////////////////////////
     public IEnumerator RollDice()
     {
         diceNum = 1;
