@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class StartScreen : MonoBehaviour
 {
+    //This script controls all of the buttons on the main menu, loads the game and quits the application
     public GameObject mainMenu;
     public GameObject ruleScreen;
 
